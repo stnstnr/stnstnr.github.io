@@ -1,0 +1,155 @@
+/* Portfolio Styling */
+body {
+  background-color: #393E41;
+  background-image: url('/public/grey-background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'MedievalSharp', cursive;
+  color: #E7BB41;
+  margin: 0;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #2b2b2b;
+  border-bottom: 5px solid #D3D0CB;
+  text-align: center;
+}
+
+.logo-container img {
+  height: 80px; /* Navigation logo size */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #E7BB41;
+  font-size: 1.2em;
+  padding: 8px 15px;
+  border: 2px solid #D3D0CB;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+/* Navigation Hover */
+nav a:hover,
+nav a:focus {
+  background: #44BBA4;
+  color: #393E41;
+  border-color: #E7BB41;
+  outline: none;
+  transform: scale(1.05);
+}
+
+/* Home Page Large Logo */
+.home-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.home-logo-container img {
+  width: 250px;
+  height: auto;
+  filter: drop-shadow(0px 0px 15px rgba(231, 187, 65, 0.7));
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Portfolio Grid */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.project-card {
+  background: #2b2b2b;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid #D3D0CB;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  border-color: #E7BB41;
+  box-shadow: 0 0 15px rgba(208, 208, 208, 0.5);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* General Content Styling */
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(57, 62, 65, 0.9);
+  border-radius: 10px;
+  text-align: center;
+  color: #E7BB41;
+  border: 2px solid #D3D0CB;
+  box-shadow: 0 0 15px rgba(211, 208, 203, 0.3);
+}
+
+/* Headings */
+h2 {
+  color: #D3D0CB;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px rgba(208, 208, 208, 0.5);
+}
+
+h3 {
+  color: #E7BB41;
+}
+
+/* List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #2b2b2b;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #D3D0CB;
+  transition: background 0.3s, transform 0.2s;
+}
+
+ul li:hover {
+  background: #44BBA4;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2b2b2b;
+  color: #D3D0CB;
+  border-top: 5px solid #D3D0CB;
+}
