@@ -112,13 +112,13 @@ const Contact = () => (
   <div className="content">
     <h2>Contact Me</h2>
     <p>Email: austin@stronghold-software.com</p>
-    <p>Location: Grand Junction, CO</p>
+    <p>Location: Colorado</p>
   </div>
 );
 
 const Footer = () => (
   <footer>
-    <p>&copy; 2025 Austin Stoner. All Rights Reserved.</p>
+    <p>&copy; 2025 Stronghold Software. All Rights Reserved.</p>
   </footer>
 );
 
