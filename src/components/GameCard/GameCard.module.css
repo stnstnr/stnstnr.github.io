@@ -1,0 +1,22 @@
+.card {
+  width: 260px;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.title {
+  margin-top: 14px;
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.status {
+  opacity: 0.6;
+  font-size: 0.9rem;
+}

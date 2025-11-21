@@ -1,0 +1,15 @@
+.heroPage {
+  width: 100%;
+  min-height: calc(100vh - 90px); /* header height awareness */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.heroLogo {
+  width: 140px;
+  margin-bottom: 30px;
+}

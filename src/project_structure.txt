@@ -1,0 +1,71 @@
+﻿Folder PATH listing
+Volume serial number is 9CDA-684A
+C:\GIT\WEBSITE\SRC
+|   App.js
+|   folders.ps1
+|   index.js
+|   theme.js
+|   
++---components
+|   |   FadeIn.js
+|   |   
+|   +---AnimatedCursor
+|   |       AnimatedCursor.js
+|   |       AnimatedCursor.module.css
+|   |       
+|   +---BackgroundLayer
+|   |       BackgroundLayer.js
+|   |       
+|   +---BootSequence
+|   |       BootSequence.js
+|   |       BootSequence.module.css
+|   |       
+|   +---ContentBox
+|   |       ContentBox.js
+|   |       ContentBox.module.css
+|   |       
+|   +---Footer
+|   |       Footer.js
+|   |       Footer.module.css
+|   |       
+|   +---GameCard
+|   |       GameCard.js
+|   |       GameCard.module.css
+|   |       
+|   +---Header
+|   |       Header.js
+|   |       Header.module.css
+|   |       
+|   +---Hero
+|   |       Hero.js
+|   |       Hero.module.css
+|   |       
+|   +---Navbar
+|   |       Navbar.js
+|   |       Navbar.module.css
+|   |       
+|   +---TiltedCard
+|   |       TiltedCard.js
+|   |       TiltedCard.module.css
+|   |       
+|   \---Typewriter
+|           Typewrite.module.css
+|           Typewriter.js
+|           
++---layout
+|       Layout.js
+|       Layout.module.css
+|       
++---pages
+|       Contact.js
+|       Contact.module.css
+|       Games.js
+|       Games.module.css
+|       Labs.js
+|       Labs.module.css
+|       
+\---styles
+        global.css
+        PageContainer.css
+        theme.css
+        
