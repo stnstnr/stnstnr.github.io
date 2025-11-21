@@ -15,7 +15,9 @@ export default function Hero() {
         transition={{ duration: 1 }}
       />
 
-      <BootSequence />
+      <div className={styles.bootWrapper}>
+        <BootSequence />
+      </div>
     </div>
   );
 }

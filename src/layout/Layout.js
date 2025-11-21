@@ -1,3 +1,4 @@
+// === src/layout/Layout.js ===
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import AnimatedCursor from "../components/AnimatedCursor/AnimatedCursor";
@@ -13,7 +14,11 @@ export default function Layout({ children }) {
 
       <Header />
 
-      <main className={styles.main}>{children}</main>
+      <main className={styles.main}>
+        <div className={styles.heroContainer}>
+          {children}
+        </div>
+      </main>
 
       <Footer />
     </div>

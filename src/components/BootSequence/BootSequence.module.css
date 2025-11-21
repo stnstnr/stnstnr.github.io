@@ -19,6 +19,10 @@
   font-size: 0.95rem;
   transition: width 0.35s ease;
   color: #d8d8d8;
+
+  /* reserve space so footer does not move */
+  min-height: 500px;        /* tweak this number as needed */
+  box-sizing: border-box;
 }
 
 .line {
