@@ -1,0 +1,18 @@
+.title {
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.gameList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}

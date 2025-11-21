@@ -1,4 +1,6 @@
+// === src/components/Typewriter/Typewriter.js ===
 import { useEffect, useState } from "react";
+import styles from "./Typewriter.module.css";
 
 export default function Typewriter({
   steps = ["Initializing systems...", "Systems online."],
@@ -22,7 +24,6 @@ export default function Typewriter({
           clearInterval(interval);
 
           setTimeout(() => {
-            // Trigger glitch ONLY when transitioning to next line
             if (lineIndex < steps.length - 1) {
               setGlitchActive(true);
 
@@ -39,32 +40,15 @@ export default function Typewriter({
 
     type();
     return () => clearInterval(interval);
-  }, [lineIndex]);
-
+  }, [lineIndex, steps, speed, delayBetween]);
 
   return (
     <p
-      className={glitchActive ? "glitch" : ""}
+      className={`${styles.line} ${glitchActive ? "glitch" : ""}`}
       data-text={displayText}
-      style={{
-        color: "var(--accent)",
-        fontFamily: "JetBrains Mono, monospace",
-        fontSize: "1.3rem",
-        marginTop: "20px",
-        textShadow: "0 0 8px var(--accent)",
-        animation: glitchActive ? "glitchFlash 0.25s linear" : "none"
-      }}
     >
       › {displayText}
-      <span
-        style={{
-          display: "inline-block",
-          width: "12px",
-          background: "var(--accent)",
-          marginLeft: "5px",
-          animation: "blink 1s infinite"
-        }}
-      ></span>
+      <span className={styles.cursor}></span>
     </p>
   );
 }

@@ -1,4 +1,6 @@
+// === src/components/AnimatedCursor/AnimatedCursor.js ===
 import { useEffect, useRef } from "react";
+import styles from "./AnimatedCursor.module.css";
 
 export default function AnimatedCursor() {
   const cursorRef = useRef(null);
@@ -25,24 +27,5 @@ export default function AnimatedCursor() {
     };
   }, []);
 
-  return (
-    <div
-      ref={cursorRef}
-      style={{
-        position: "fixed",
-        width: "16px",
-        height: "16px",
-        border: "2px solid #bb00ff",
-        borderRadius: "50%",
-        pointerEvents: "none",
-        transform: "translate(-50%, -50%)",
-        opacity: 0,
-        mixBlendMode: "difference",
-        boxShadow: "0 0 10px #bb00ff",
-        zIndex: 999999,
-        /* 👇 key change: no smoothing */
-        transition: "opacity 0.15s ease-out"
-      }}
-    />
-  );
+  return <div ref={cursorRef} className={styles.cursor} />;
 }

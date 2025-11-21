@@ -1,0 +1,14 @@
+.cursor {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #bb00ff;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  mix-blend-mode: difference;
+  box-shadow: 0 0 10px #bb00ff;
+  z-index: 999999;
+  transition: opacity 0.15s ease-out;
+}

@@ -1,33 +1,20 @@
-// === src/components/Layout.js ===
-import Header from "./Header";
-import Footer from "./Footer";
-import AnimatedCursor from "./AnimatedCursor";
-import BackgroundLayer from "./BackgroundLayer";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import AnimatedCursor from "../components/AnimatedCursor/AnimatedCursor";
+import BackgroundLayer from "../components/BackgroundLayer/BackgroundLayer";
+
+import styles from "./Layout.module.css";
 
 export default function Layout({ children }) {
   return (
-    <div style={{ position: "relative" }}>
-
-      {/* Background + Cursor (they should sit under everything) */}
+    <div className={styles.root}>
       <AnimatedCursor />
       <BackgroundLayer />
 
-      {/* Header should not be inside any centered container */}
       <Header />
 
-      {/* Main content wrapper */}
-      <main
-        style={{
-          paddingTop: "40px",
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        {children}
-      </main>
+      <main className={styles.main}>{children}</main>
 
-      {/* Footer stays full-width below */}
       <Footer />
     </div>
   );

@@ -1,0 +1,35 @@
+.measure {
+  position: absolute;
+  visibility: hidden;
+  white-space: pre;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.95rem;
+}
+
+.terminal {
+  margin-top: 24px;
+  text-align: left;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 14px 18px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 16px rgba(187,0,255,0.25);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.95rem;
+  transition: width 0.35s ease;
+  color: #d8d8d8;
+}
+
+.line {
+  white-space: pre;
+  margin-bottom: 2px;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  margin-left: 4px;
+  background: var(--accent);
+  animation: blink 1s infinite;
+}

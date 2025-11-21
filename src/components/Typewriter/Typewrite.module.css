@@ -1,0 +1,15 @@
+.line {
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  text-shadow: 0 0 8px var(--accent);
+}
+
+.cursor {
+  display: inline-block;
+  width: 12px;
+  background: var(--accent);
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}

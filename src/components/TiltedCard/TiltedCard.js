@@ -1,5 +1,7 @@
+// === src/components/TiltedCard/TiltedCard.js ===
 import React, { useRef, useEffect } from "react";
 import VanillaTilt from "vanilla-tilt";
+import styles from "./TiltedCard.module.css";
 
 export default function TiltedCard({ children, options }) {
   const tiltRef = useRef(null);
@@ -17,7 +19,7 @@ export default function TiltedCard({ children, options }) {
   }, [options]);
 
   return (
-    <div ref={tiltRef} style={{ width: "fit-content", margin: "auto" }}>
+    <div ref={tiltRef} className={styles.wrapper}>
       {children}
     </div>
   );

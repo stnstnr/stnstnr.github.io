@@ -1,9 +1,10 @@
+// === src/components/BackgroundLayer/BackgroundLayer.js ===
 import { Box } from "@chakra-ui/react";
 
 export default function BackgroundLayer() {
   return (
     <>
-      {/* Grid (vertical + horizontal lines) */}
+      {/* Grid Layer */}
       <Box
         position="fixed"
         inset={0}
@@ -21,7 +22,7 @@ export default function BackgroundLayer() {
         position="fixed"
         inset={0}
         pointerEvents="none"
-        backgroundImage="url('https://grainy-gradients.vercel.app/noise.svg')"
+        backgroundImage="url('/noise.svg')"
         opacity={0.08}
         mixBlendMode="overlay"
         zIndex={-1}

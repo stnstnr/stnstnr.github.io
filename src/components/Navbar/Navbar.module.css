@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  padding: 10px 18px;
+  border: 1px solid rgba(187, 0, 255, 0.25);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text);
+  transition: 0.2s;
+}
+
+.link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  transform: translateY(-2px);
+}
