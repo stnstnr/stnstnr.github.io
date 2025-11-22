@@ -23,14 +23,15 @@ export default function BootSequence({
   const [glitchActive, setGlitchActive] = useState(false);
   const [width, setWidth] = useState(null);
 
-  // Hidden element for measurement
   const measureRef = useRef(null);
 
+  // FIXED: measure width once, avoid CI warnings
   useEffect(() => {
-    if (measureRef.current && width === null) {
-      setWidth(measureRef.current.offsetWidth + 32); // padding comfort
+    if (measureRef.current) {
+      const newWidth = measureRef.current.offsetWidth + 32;
+      setWidth(newWidth);
     }
-  }, [measureRef.current]);
+  }, []); // <— Run once only
 
   useEffect(() => {
     let i = 0;
@@ -73,13 +74,12 @@ export default function BootSequence({
     return () => clearInterval(interval);
   }, [stepIndex, steps, speed, delayBetween, glitchDuration]);
 
-
   const allLines = [...displayLines];
   if (currentText) allLines.push(currentText);
 
   return (
     <>
-      {/* Hidden line used to calculate width */}
+      {/* Hidden measuring element */}
       <div
         ref={measureRef}
         style={{
