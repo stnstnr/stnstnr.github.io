@@ -5,8 +5,8 @@ import styles from "./Games.module.css";
 import "../styles/PageContainer.css";
 
 const games = [
-  { title: "Elevator", image: "/elevator.png", status: "In Development" },
-  { title: "Apocalypse", image: "/apocalypse.png", status: "Prototype Stage" }
+  { title: "Elevator", image: "/Elevator.png", status: "In Development" },
+  { title: "Apocalypse", image: "/Apocalypse.png", status: "Prototype Stage" }
 ];
 
 export default function Games() {
