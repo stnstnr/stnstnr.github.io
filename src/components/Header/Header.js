@@ -9,7 +9,7 @@ export default function Header() {
       <div className={styles.inner}>
         <Link to="/" className={styles.logoContainer}>
           <img
-            src="/logo.png"
+            src="/logo-shield-trans.png"
             alt="Stronghold Software"
             className={styles.logo}
           />

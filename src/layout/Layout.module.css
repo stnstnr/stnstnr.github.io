@@ -6,8 +6,8 @@
 
 /* The container that holds hero content */
 .heroContainer {
-  margin-top: 20px;
-  min-height: 500px; /* <--- THIS is key */
+  margin-top: 50px;
+  min-height: 600px; /* <--- THIS is key */
   display: flex;
   flex-direction: column;
   align-items: center;

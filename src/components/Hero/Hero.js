@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className={styles.heroPage}>
       <motion.img
-        src="/logo.png"
+        src="/logo-transparent.png"
         alt="Stronghold Software Logo"
         className={styles.heroLogo}
         initial={{ opacity: 0, scale: 0.8 }}
